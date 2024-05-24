@@ -1,0 +1,15 @@
+node_modules
+.vscode
+docs
+lib
+public
+test
+.gitignore
+notes.txt
+jest.config.js 
+pnpm-lock.yaml
+typedoc.json
+opt
+jsr
+package-lock.json
+.github
