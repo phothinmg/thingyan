@@ -24,3 +24,6 @@ Doc: http://cool-emerald.blogspot.com/2013/06/algorithm-program-and-calculation-
 
 #### From JSR
 
+```
+ import { thingyan } from "https://esm.run/thingyan";
+```
