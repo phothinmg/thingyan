@@ -1,7 +1,7 @@
 {
     "name": "@ptm/thingyan",
     "version": "0.1.0",
-    "exports": "./mod.ts",
+    "exports": "./jsr/mod.ts",
     "publish": {
         "include": [
           "LICENSE",
