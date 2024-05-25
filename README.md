@@ -1,29 +1,214 @@
-## Calculates the dates and times for the Mahar Thingyan(New Year) festival based on the given Myanmar year.
+# Thingyan
 
 ---
 
-### Acknowledgement
+## About
 
-The algorithm and calculations of this package are part of **Modern Myanmar Calendrical Calculations** by Yan Naing Aye.
+**_The Myanmar new year festival (the water festival) is called the Thingyan._**
 
-I just converted it into a package for use in Javascript runtimes.
-
-Information of the original creator :
-
-WebSite: https://yan9a.github.io/mcal/
-
-MIT License: (https://opensource.org/licenses/MIT)
-
-Copyright: (c) 2018 Yan Naing Aye
-
-Doc: http://cool-emerald.blogspot.com/2013/06/algorithm-program-and-calculation-of.html
+This package focus on calculate information of thingyan festival days and times , that can be use in morden javascript runtimes.
+The function named `thingyan` , that generate the following from a Myanmar(Burmese) year.
 
 ---
 
-### Install 
+## Acknowledgement
 
-#### From JSR
+The algorithm and calculations of this package are base on [Modern Myanmar Calendrical Calculations](https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js) by [Yan Naing Aye](https://scholar.google.com/citations?hl=en&user=MOmTzIwAAAAJ).
+
+---
+
+## Install and Usage
+
+### Browser
+
+Import function `thingyan ` from esm.run .
+
+```html
+<script type="module">
+  import { thingyan } from "https://esm.run/thingyan";
+  const my = 1386; // Myanmar Year
+  console.log(thingyan(my));
+</script>
+```
+
+
+### Node ( npm registry )
+
+```bash
+npm i thingyan
+```
+
+```bash
+yarn  add thingyan
+```
+
+```bash
+pnpm i thingyan
+```
+
+```ts
+import { type ThinGyan,  thingyan } from "thingyan";
+const my: number = 1386; // Myanmar Year
+const tg: ThinGyan = thingyan(my);
+
+// Rest of code
 
 ```
- import { thingyan } from "https://esm.run/thingyan";
+
+### Node ( jsr registry )
+
+_Before that read first [Using JSR with Node.js](https://jsr.io/docs/with/node)._
+
+```bash
+npx jsr add @ptm/thingyan
 ```
+
+```bash
+yarn dlx jsr add @ptm/thingyan
+```
+
+```bash
+pnpm dlx jsr add @ptm/thingyan
+```
+
+```ts
+import * as mod from "@ptm/thingyan";
+//OR
+import { thingyan } from "@ptm/thingyan";
+import { type ThinGyan } from "@ptm/thingyan";
+
+const my: number = 1386; // Myanmar Year
+const tg: ThinGyan = thingyan(my);
+
+// Rest of code
+```
+
+[API docs](https://jsr.io/@ptm/thingyan/doc) on jsr registry.
+
+### Deno ( jsr registry)
+
+
+
+_update deno to latest version to active `add`_
+
+```bash
+deno add @ptm/thingyan
+```
+
+That will automatically be add ` @ptm/thingyan` to `deno.json`.
+
+```json
+{
+  "imports": {
+    "@ptm/thingyan": "jsr:@ptm/thingyan@^0.1.0",
+    "std/": "https://deno.land/std@0.224.0/"
+  }
+}
+```
+
+`index.ts`
+
+```ts
+import { type ThinGyan, thingyan } from "@ptm/thingyan";
+const my = 1386; // Myanmar Year
+const tg: ThinGyan = thingyan(my);
+Deno.serve((_req: Request) => {
+  const response = JSON.stringify(tg);
+
+  return new Response(response, {
+    status: 200,
+    headers: new Headers({ "Content-Type": "application/json" }),
+  });
+});
+```
+
+```bash
+deno run --allow-read --allow-net index.ts
+```
+
+- http://localhost:8000/
+
+### Bun ( jsr registry)
+
+
+
+```bash
+bunx jsr add @ptm/thingyan
+```
+
+That will be add install scopes for JSR to `bunfig.toml`.
+
+
+
+```toml
+[install.scopes]
+"@jsr" = "https://npm.jsr.io"
+
+```
+That will automatically be create `package.json` and add ` @ptm/thingyan`.
+
+
+
+```json
+{ "dependencies": { "@ptm/thingyan": "npm:@jsr/ptm__thingyan" } }
+```
+
+`http.ts`
+
+```ts
+import { type ThinGyan, thingyan } from "@ptm/thingyan";
+const my = 1386; // Myanmar Year
+const tg: ThinGyan = thingyan(my);
+
+Bun.serve({
+  port: 3000,
+  fetch() {
+    return new Response(JSON.stringify(tg, null, 2), {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  },
+});
+```
+
+```bash
+ bun --hot run http.ts
+```
+
+- http://localhost:3000/
+
+
+
+### Cloudflare Workers ( npm registry )
+
+```bash
+yarn add thingyan
+```
+
+`worker.ts`
+
+```ts
+import { type ThinGyan, thingyan } from 'thingyan';
+const my: number = 1386; // Myanmar Year
+const tg: ThinGyan = thingyan(my);
+
+export interface Env{
+
+}
+
+export default {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		return new Response(JSON.stringify(tg, null, 2), {
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		});
+	},
+};
+
+```
+
+
+
+

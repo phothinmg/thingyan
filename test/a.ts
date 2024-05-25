@@ -8,7 +8,7 @@ var a = new Date(2024, 4, 24, 13, 57, 22).toLocaleString("en-US", {
   second: "2-digit",
 });
 
-import { thingyan } from "../dist/index.js";
+import { type ThinGyan,  thingyan } from "../dist";
 console.log(thingyan(1300));
 /* 
 
