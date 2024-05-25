@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1716662215972" clover="3.2.0">
+  <project timestamp="1716662215972" name="All files">
+    <metrics statements="64" coveredstatements="53" conditionals="23" coveredconditionals="15" methods="3" coveredmethods="3" elements="90" coveredelements="71" complexity="0" loc="64" ncloc="64" packages="1" files="1" classes="1"/>
+    <file name="index.ts" path="/home/ptm/Documents/Node_js/thingyan/src/index.ts">
+      <metrics statements="64" coveredstatements="53" conditionals="23" coveredconditionals="15" methods="3" coveredmethods="3"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="51" count="21" type="cond" truecount="3" falsecount="1"/>
+      <line num="52" count="21" type="cond" truecount="3" falsecount="1"/>
+      <line num="53" count="21" type="stmt"/>
+      <line num="57" count="21" type="cond" truecount="4" falsecount="1"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="62" count="0" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="66" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="73" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="75" count="21" type="stmt"/>
+      <line num="76" count="21" type="stmt"/>
+      <line num="77" count="21" type="stmt"/>
+      <line num="78" count="21" type="stmt"/>
+      <line num="79" count="21" type="stmt"/>
+      <line num="80" count="21" type="stmt"/>
+      <line num="81" count="21" type="stmt"/>
+      <line num="82" count="21" type="stmt"/>
+      <line num="83" count="21" type="stmt"/>
+      <line num="84" count="21" type="stmt"/>
+      <line num="85" count="21" type="stmt"/>
+      <line num="86" count="21" type="stmt"/>
+      <line num="87" count="21" type="stmt"/>
+      <line num="88" count="21" type="cond" truecount="1" falsecount="1"/>
+      <line num="89" count="21" type="stmt"/>
+      <line num="91" count="0" type="stmt"/>
+      <line num="92" count="0" type="stmt"/>
+      <line num="97" count="21" type="stmt"/>
+      <line num="98" count="21" type="stmt"/>
+      <line num="99" count="21" type="stmt"/>
+      <line num="100" count="21" type="stmt"/>
+      <line num="101" count="21" type="stmt"/>
+      <line num="104" count="21" type="stmt"/>
+      <line num="123" count="4" type="stmt"/>
+      <line num="125" count="4" type="stmt"/>
+      <line num="127" count="4" type="stmt"/>
+      <line num="129" count="4" type="stmt"/>
+      <line num="131" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="133" count="4" type="stmt"/>
+      <line num="135" count="4" type="stmt"/>
+      <line num="136" count="4" type="stmt"/>
+      <line num="163" count="1" type="stmt"/>
+      <line num="165" count="4" type="stmt"/>
+      <line num="167" count="4" type="stmt"/>
+      <line num="170" count="4" type="stmt"/>
+      <line num="173" count="4" type="stmt"/>
+      <line num="175" count="4" type="stmt"/>
+      <line num="194" count="4" type="stmt"/>
+      <line num="196" count="4" type="stmt"/>
+      <line num="215" count="4" type="stmt"/>
+      <line num="217" count="4" type="stmt"/>
+      <line num="229" count="4" type="stmt"/>
+      <line num="231" count="4" type="stmt"/>
+      <line num="244" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="245" count="1" type="stmt"/>
+      <line num="246" count="1" type="stmt"/>
+      <line num="257" count="3" type="stmt"/>
+      <line num="261" count="4" type="stmt"/>
+      <line num="263" count="4" type="stmt"/>
+      <line num="275" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>

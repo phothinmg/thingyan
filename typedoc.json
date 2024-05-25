@@ -3,5 +3,5 @@
   "name": "Mahar Thingyan",
   "darkHighlightTheme": "dark-plus",
   "entryPoints": ["./src/index.ts"],
-  "out": "docs"
+  "out": "docs/api"
 }

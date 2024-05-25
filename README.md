@@ -1,5 +1,8 @@
 # Thingyan
 
+
+[![codecov](https://codecov.io/gh/phothinmg/thingyan/graph/badge.svg?token=hnukvMUKVl)](https://codecov.io/gh/phothinmg/thingyan) [![JSR Score](https://jsr.io/badges/@ptm/thingyan/score)](https://jsr.io/@ptm/thingyan)
+
 ---
 
 ## About
@@ -7,8 +10,18 @@
 **_The Myanmar new year festival (the water festival) is called the Thingyan._**
 
 This package focus on calculate information of thingyan festival days and times , that can be use in morden javascript runtimes.
-The function named `thingyan` , that generate the following from a Myanmar(Burmese) year.
+The function named `thingyan` , that generate the following from a Myanmar(Burmese) year :
 
+1. AkyaDayTime: string;
+2. AkyatDay: string;
+3. AkyatDay2: string;
+4. AkyoDay: string;
+5. AtatDayTime: string;
+6. NewYearDay: string;
+7. YearFrom: number;
+8. YearTo: number;
+
+API Docs : 
 ---
 
 ## Acknowledgement
@@ -21,7 +34,9 @@ The algorithm and calculations of this package are base on [Modern Myanmar Calen
 
 ### Browser
 
-Import function `thingyan ` from esm.run .
+Import function `thingyan ` from:
+
+`esm.run` 
 
 ```html
 <script type="module">
@@ -30,6 +45,18 @@ Import function `thingyan ` from esm.run .
   console.log(thingyan(my));
 </script>
 ```
+
+`esm.sh` 
+
+```html
+<script type="module">
+  import { thingyan } from "https://esm.sh/thingyan@0.1.0";
+  const my = 1386; // Myanmar Year
+  console.log(thingyan(my));
+</script>
+```
+
+
 
 
 ### Node ( npm registry )
