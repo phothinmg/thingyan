@@ -13,6 +13,11 @@
     "Myanmar Calendar",
     " Myanmar New Year Days "
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phothinmg/thingyan.git"
+  },
+  "homepage": "https://phothinmg.github.io/thingyan/",
   "author": "Pho Thin Maung",
   "license": "Apache-2.0",
   "devDependencies": {
