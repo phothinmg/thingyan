@@ -1,7 +1,12 @@
-# Thingyan
+
+<div align="center">
+
+![thingyan](https://imagedelivery.net/6bSk6wUa9UOwEesJAZQuoA/3428f0b9-c300-4d1b-de79-f0903221c000/public)
 
 
 [![codecov](https://codecov.io/gh/phothinmg/thingyan/graph/badge.svg?token=hnukvMUKVl)](https://codecov.io/gh/phothinmg/thingyan) [![JSR Score](https://jsr.io/badges/@ptm/thingyan/score)](https://jsr.io/@ptm/thingyan)
+
+</div>
 
 ---
 
@@ -9,8 +14,7 @@
 
 **_The Myanmar new year festival (the water festival) is called the Thingyan._**
 
-This package focus on calculate information of thingyan festival days and times , that can be use in morden javascript runtimes.
-The function named `thingyan` , that generate the following from a Myanmar(Burmese) year :
+This package focus on calculate information of thingyan festival days and times , that can be use in morden javascript runtimes.The function named `thingyan` , that generate the following from a Myanmar(Burmese) year.
 
 1. AkyaDayTime: string;
 2. AkyatDay: string;
@@ -21,14 +25,12 @@ The function named `thingyan` , that generate the following from a Myanmar(Burme
 7. YearFrom: number;
 8. YearTo: number;
 
-API Docs : 
----
+Live Thingyan Calculator : https://phothinmg.github.io/thingyan/
 
-## Acknowledgement
-
-The algorithm and calculations of this package are base on [Modern Myanmar Calendrical Calculations](https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js) by [Yan Naing Aye](https://scholar.google.com/citations?hl=en&user=MOmTzIwAAAAJ).
+API Docs : https://phothinmg.github.io/thingyan/api/
 
 ---
+
 
 ## Install and Usage
 
@@ -235,6 +237,18 @@ export default {
 };
 
 ```
+
+---
+
+## Acknowledgement
+
+The algorithm and calculations of this package are base on [Modern Myanmar Calendrical Calculations](https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js) by [Yan Naing Aye](https://scholar.google.com/citations?hl=en&user=MOmTzIwAAAAJ).
+
+---
+
+
+
+
 
 
 

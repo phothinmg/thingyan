@@ -12,21 +12,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css"
     />
-    <title>Thingyan Calculator</title>
+    <title>Thingyan</title>
   </head>
   <body>
     <h1>Thingyan Calculator</h1>
+    <nav>
+      <a href="https://github.com/phothinmg/thingyan" target="_blank">Github</a>
+      <a href="https://phothinmg.github.io/thingyan/api/" target="_blank">API Docs</a>
+      <a href="https://phothinmg.github.io/thingyan/lcov-report/" target="_blank"> Coverage Report</a>
+      <a href="https://www.npmjs.com/package/thingyan" target="_blank">NPM Package</a>
+      <a href="https://jsr.io/@ptm/thingyan" target="_blank">JSR Package</a>
+    </nav>
     <span>Myanmar Year </span>
     <input type="number" name="my" id="my" value="1386" /> <br />
     <hr />
     <table id="thingyan"></table>
     <br />
     <hr />
-    Github : https://github.com/phothinmg/thingyan
-    <br>
-    API Docs : https://phothinmg.github.io/thingyan/api/
-    <br>
-    Coverage Report : https://phothinmg.github.io/thingyan/lcov-report/
     <script type="module">
       import { thingyan } from "https://esm.run/thingyan";
       const my = document.getElementById("my");
