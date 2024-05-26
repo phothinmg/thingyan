@@ -15,20 +15,32 @@
     <title>Thingyan</title>
   </head>
   <body>
-    <h1>Thingyan Calculator</h1>
     <nav>
       <a href="https://github.com/phothinmg/thingyan" target="_blank">Github</a>
-      <a href="https://phothinmg.github.io/thingyan/api/" target="_blank">API Docs</a>
-      <a href="https://phothinmg.github.io/thingyan/lcov-report/" target="_blank"> Coverage Report</a>
-      <a href="https://www.npmjs.com/package/thingyan" target="_blank">NPM Package</a>
-      <a href="https://jsr.io/@ptm/thingyan" target="_blank">JSR Package</a>
+      <a href="https://phothinmg.github.io/thingyan/api/" target="_blank"
+        >API</a
+      >
+      <a href="https://www.npmjs.com/package/thingyan" target="_blank">NPM</a>
+      <a href="https://jsr.io/@ptm/thingyan" target="_blank">JSR</a>
     </nav>
-    <span>Myanmar Year </span>
-    <input type="number" name="my" id="my" value="1386" /> <br />
-    <hr />
-    <table id="thingyan"></table>
-    <br />
-    <hr />
+    <main>
+      <h1>Thingyan Calculator</h1>
+
+      <div>
+        <p id="bur-c" style="color: goldenrod;"></p>
+        <small id="eng-c" style="margin-right: 20px"></small>
+        <small id="tdt" style="color: greenyellow;"></small>
+      </div>
+      <br />
+      <span>Myanmar Year </span>
+      <input type="number" name="my" id="my" value="1386" /> <br />
+      <br />
+      <table id="thingyan"></table>
+      <br />
+      <small><i>
+        The algorithm and calculations of this package are base on <a href="https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js">Modern Myanmar Calendrical Calculations</a>
+      </i></small>
+    </main>
     <script type="module">
       import { thingyan } from "https://esm.run/thingyan";
       const my = document.getElementById("my");
@@ -53,5 +65,6 @@
         document.getElementById("thingyan").innerHTML = html;
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/phothinmg/master-repo@main/burmese-calendar/burmesecalendar.min.js"></script>
   </body>
 </html>
