@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716662215972" clover="3.2.0">
-  <project timestamp="1716662215972" name="All files">
+<coverage generated="1716765941589" clover="3.2.0">
+  <project timestamp="1716765941590" name="All files">
     <metrics statements="64" coveredstatements="53" conditionals="23" coveredconditionals="15" methods="3" coveredmethods="3" elements="90" coveredelements="71" complexity="0" loc="64" ncloc="64" packages="1" files="1" classes="1"/>
     <file name="index.ts" path="/home/ptm/Documents/Node_js/thingyan/src/index.ts">
       <metrics statements="64" coveredstatements="53" conditionals="23" coveredconditionals="15" methods="3" coveredmethods="3"/>

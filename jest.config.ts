@@ -4,7 +4,7 @@ const config: JestConfigWithTsJest = {
   preset: "ts-jest",
   testEnvironment: "node",
   collectCoverage: true,
-  coverageDirectory: "./docs/"
+  coverageDirectory: "./coverage"
 };
 
 export default config;
