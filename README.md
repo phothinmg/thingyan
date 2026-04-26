@@ -1,10 +1,7 @@
-
 <div align="center">
 
 ![thingyan](https://imagedelivery.net/6bSk6wUa9UOwEesJAZQuoA/3428f0b9-c300-4d1b-de79-f0903221c000/public)
-
-
-[![codecov](https://codecov.io/gh/phothinmg/thingyan/graph/badge.svg?token=hnukvMUKVl)](https://codecov.io/gh/phothinmg/thingyan) [![JSR Score](https://jsr.io/badges/@ptm/thingyan/score)](https://jsr.io/@ptm/thingyan)
+[![JSR Score](https://jsr.io/badges/@ptm/thingyan/score)](https://jsr.io/@ptm/thingyan)
 
 </div>
 
@@ -31,14 +28,13 @@ API Docs : https://phothinmg.github.io/thingyan/api/
 
 ---
 
-
 ## Install and Usage
 
 ### Browser
 
 Import function `thingyan ` from:
 
-`esm.run` 
+`esm.run`
 
 ```html
 <script type="module">
@@ -48,7 +44,7 @@ Import function `thingyan ` from:
 </script>
 ```
 
-`esm.sh` 
+`esm.sh`
 
 ```html
 <script type="module">
@@ -57,9 +53,6 @@ Import function `thingyan ` from:
   console.log(thingyan(my));
 </script>
 ```
-
-
-
 
 ### Node ( npm registry )
 
@@ -76,12 +69,11 @@ pnpm i thingyan
 ```
 
 ```ts
-import { type ThinGyan,  thingyan } from "thingyan";
+import { type ThinGyan, thingyan } from "thingyan";
 const my: number = 1386; // Myanmar Year
 const tg: ThinGyan = thingyan(my);
 
 // Rest of code
-
 ```
 
 ### Node ( jsr registry )
@@ -115,8 +107,6 @@ const tg: ThinGyan = thingyan(my);
 [API docs](https://jsr.io/@ptm/thingyan/doc) on jsr registry.
 
 ### Deno ( jsr registry)
-
-
 
 _update deno to latest version to active `add`_
 
@@ -159,24 +149,19 @@ deno run --allow-read --allow-net index.ts
 
 ### Bun ( jsr registry)
 
-
-
 ```bash
 bunx jsr add @ptm/thingyan
 ```
 
 That will be add install scopes for JSR to `bunfig.toml`.
 
-
-
 ```toml
 [install.scopes]
 "@jsr" = "https://npm.jsr.io"
 
 ```
+
 That will automatically be create `package.json` and add ` @ptm/thingyan`.
-
-
 
 ```json
 { "dependencies": { "@ptm/thingyan": "npm:@jsr/ptm__thingyan" } }
@@ -207,8 +192,6 @@ Bun.serve({
 
 - http://localhost:3000/
 
-
-
 ### Cloudflare Workers ( npm registry )
 
 ```bash
@@ -218,24 +201,25 @@ yarn add thingyan
 `worker.ts`
 
 ```ts
-import { type ThinGyan, thingyan } from 'thingyan';
+import { type ThinGyan, thingyan } from "thingyan";
 const my: number = 1386; // Myanmar Year
 const tg: ThinGyan = thingyan(my);
 
-export interface Env{
-
-}
+export interface Env {}
 
 export default {
-	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		return new Response(JSON.stringify(tg, null, 2), {
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		});
-	},
+  async fetch(
+    request: Request,
+    env: Env,
+    ctx: ExecutionContext,
+  ): Promise<Response> {
+    return new Response(JSON.stringify(tg, null, 2), {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  },
 };
-
 ```
 
 ---
@@ -245,11 +229,3 @@ export default {
 The algorithm and calculations of this package are base on [Modern Myanmar Calendrical Calculations](https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js) by [Yan Naing Aye](https://scholar.google.com/citations?hl=en&user=MOmTzIwAAAAJ).
 
 ---
-
-
-
-
-
-
-
-
