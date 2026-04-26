@@ -1,6 +1,6 @@
 {
   "name": "thingyan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculates the dates and times for the Mahar Thingyan(New Year) festival based on the given Myanmar year",
   "type": "module",
   "main": "dist/index.cjs",
