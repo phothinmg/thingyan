@@ -1,3 +1,4 @@
+// cSpell:disable
 /*
  Acknowledgement
  The algorithm and calculations of this package are totally base on "Modern Myanmar Calendrical Calculations" by Yan Naing Aye.
@@ -12,7 +13,7 @@
  */
 const Y9A: number = 1954168.050623;
 /**
- * ## Type Defination for Julian date to Western date function input
+ * ## Type Definition for Julian date to Western date function input
  *
  *  ### jd - julian date
  *  ### ct - calendar type [Optional argument: 0=British (default), 1=Gregorian, 2=Julian]

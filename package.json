@@ -31,8 +31,22 @@
     "url": "git+https://github.com/phothinmg/thingyan.git"
   },
   "homepage": "https://phothinmg.github.io/thingyan/",
-  "author": "Pho Thin Maung",
+  "author": {
+    "name": "Pho Thin Mg",
+    "email": "phothinmg@disroot.org",
+    "url": "https://phothinmg.github.io/"
+  },
   "license": "Apache-2.0",
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist/**/*",
+    "bin/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/node": "^25.6.0",
     "susee": "^1.5.3",
