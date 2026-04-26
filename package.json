@@ -41,8 +41,7 @@
     "package.json",
     "README.md",
     "LICENSE",
-    "dist/**/*",
-    "bin/**/*"
+    "dist/**/*"
   ],
   "publishConfig": {
     "access": "public"
