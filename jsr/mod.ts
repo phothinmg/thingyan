@@ -1,3 +1,4 @@
+// cSpell:disable
 /*
  Acknowledgement
  The algorithm and calculations of this package are totally base on "Modern Myanmar Calendrical Calculations" by Yan Naing Aye.
@@ -32,7 +33,7 @@ interface J2W {
   sg?: number;
 }
 /**
- *  ## Type Defination for Julian date to Western date function returns
+ *  ## Type Definition for Julian date to Western date function returns
  *
  *  ### Gregorian calendar's date and time
  */
@@ -159,10 +160,10 @@ export interface ThinGyan {
 }
 /**
  * ## Calculates the dates and times for the Mahar Thingyan festival based on the given Myanmar year.
- * 
+ *
  * @param my - The Myanmar year for which the festival dates and times are calculated.
  * @returns - An object containing the festival dates and times.
- * 
+ *
  * ```js
  * const thingyan = thingyan(1386);
  * console.log(thingyan.AtatDayTime)
@@ -186,7 +187,7 @@ export function thingyan(my: number): ThinGyan {
     atat.day,
     atat.hour,
     atat.minute,
-    atat.second
+    atat.second,
   ).toLocaleString("en-US", {
     year: "numeric",
     month: "short",
@@ -207,7 +208,7 @@ export function thingyan(my: number): ThinGyan {
     akya.day,
     akya.hour,
     akya.minute,
-    akya.second
+    akya.second,
   ).toLocaleString("en-US", {
     year: "numeric",
     month: "short",
@@ -225,7 +226,7 @@ export function thingyan(my: number): ThinGyan {
   const AkyoDay: string = new Date(
     akyo.year,
     akyo.month - 1,
-    akyo.day
+    akyo.day,
   ).toLocaleString("en-US", {
     year: "numeric",
     month: "short",
@@ -239,7 +240,7 @@ export function thingyan(my: number): ThinGyan {
   const AkyatDay: string = new Date(
     akyat.year,
     akyat.month - 1,
-    akyat.day
+    akyat.day,
   ).toLocaleString("en-US", {
     year: "numeric",
     month: "short",
@@ -254,7 +255,7 @@ export function thingyan(my: number): ThinGyan {
     AkyatDay2 = new Date(
       akyat2.year,
       akyat2.month - 1,
-      akyat2.day
+      akyat2.day,
     ).toLocaleString("en-US", {
       year: "numeric",
       month: "short",
@@ -271,7 +272,7 @@ export function thingyan(my: number): ThinGyan {
   const NewYearDay: string = new Date(
     newyear.year,
     newyear.month - 1,
-    newyear.day
+    newyear.day,
   ).toLocaleString("en-US", {
     year: "numeric",
     month: "short",
