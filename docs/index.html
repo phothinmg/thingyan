@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,9 +27,9 @@
       <h1>Thingyan Calculator</h1>
 
       <div>
-        <p id="bur-c" style="color: goldenrod;"></p>
+        <p id="bur-c" style="color: goldenrod"></p>
         <small id="eng-c" style="margin-right: 20px"></small>
-        <small id="tdt" style="color: greenyellow;"></small>
+        <small id="tdt" style="color: greenyellow"></small>
       </div>
       <br />
       <span>Myanmar Year </span>
@@ -37,12 +37,18 @@
       <br />
       <table id="thingyan"></table>
       <br />
-      <small><i>
-        The algorithm and calculations of this package are base on <a href="https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js">Modern Myanmar Calendrical Calculations</a>
-      </i></small>
+      <small
+        ><i>
+          The algorithm and calculations of this package are base on
+          <a
+            href="https://github.com/yan9a/mmcal/blob/master/javascript/ceMmDateTime.js"
+            >Modern Myanmar Calendrical Calculations</a
+          >
+        </i></small
+      >
     </main>
     <script type="module">
-      import { thingyan } from "https://esm.run/thingyan";
+      import { thingyan } from "https://cdn.jsdelivr.net/npm/thingyan@1.0.1/+esm";
       const my = document.getElementById("my");
       var y = my.value;
       my.addEventListener("change", (e) => {
@@ -65,6 +71,6 @@
         document.getElementById("thingyan").innerHTML = html;
       }
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/phothinmg/master-repo@main/burmese-calendar/burmesecalendar.min.js"></script>
+    <script src="./burmese-calendar/burmesecalendar.js"></script>
   </body>
 </html>
